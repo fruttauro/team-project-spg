@@ -1,5 +1,37 @@
-function question(questionNo, question, positiveAnswer, negativeAnswer) {
+var questionObjects = [
+{
+	"questionText": "1",
+	"positiveAnswer": "",
+	"negativeAnswer": ""
+},
+{
+	"questionText": "2",
+	"positiveAnswer": "",
+	"negativeAnswer": ""
+},
+{
+	"questionText": "3",
+	"positiveAnswer": "",
+	"negativeAnswer": ""
+},
+{
+	"questionText": "4",
+	"positiveAnswer": "",
+	"negativeAnswer": ""
+},
+{
+	"questionText": "5",
+	"positiveAnswer": "",
+	"negativeAnswer": ""
+},
+{
+	"questionText": "6",
+	"positiveAnswer": "",
+	"negativeAnswer": ""
+}	
+]
 
+function question(questionNo, question, positiveAnswer, negativeAnswer) {
 	var newQuestion = {
 		questionNo: questionNo,
 		question: question,
@@ -10,9 +42,12 @@ function question(questionNo, question, positiveAnswer, negativeAnswer) {
 	return newQuestion;
 }
 
-var questions = [];
-// Foreach question in the .json file, make a question object and add it to the questions array.
+var questionArray = [];
 
-var newQ = question(1, "Who are you?", "Cool!", "No you're not")
-questions.push(newQ)
-console.log(questions)
+for (var i = 0; i < questionObjects.length; i++) {
+	var currentQuestion = question(questionObjects[i], questionObjects[i].questionText, questionObjects[i].positiveAnswer, questionObjects[i].negativeAnswer) ;
+	questionArray.push(currentQuestion)
+
+};
+
+console.log(questionArray)

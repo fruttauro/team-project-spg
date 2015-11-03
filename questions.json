@@ -1,0 +1,33 @@
+{
+	"questionOne": {
+		"questionText" : "",
+		"positiveAnswer" : "",
+		"negativeAnswer" : ""
+	},
+	"questionTwo": {
+		"questionText" : "",
+		"positiveAnswer" : "",
+		"negativeAnswer" : ""
+	},
+	"questionThree": {
+		"questionText" : "",
+		"positiveAnswer" : "",
+		"negativeAnswer" : ""
+	},
+	"questionFour": {
+		"questionText" : "",
+		"positiveAnswer" : "",
+		"negativeAnswer" : ""
+	},
+	"questionFive": {
+		"questionText" : "",
+		"positiveAnswer" : "",
+		"negativeAnswer" : ""
+	},
+	"questionSix": {
+		"questionText" : "",
+		"positiveAnswer" : "",
+		"negativeAnswer" : ""
+	}
+
+}

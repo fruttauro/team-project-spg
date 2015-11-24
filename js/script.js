@@ -1,35 +1,4 @@
-var questionObjects = [
-{
-	"questionText": "1",
-	"positiveAnswer": "",
-	"negativeAnswer": ""
-},
-{
-	"questionText": "2",
-	"positiveAnswer": "",
-	"negativeAnswer": ""
-},
-{
-	"questionText": "3",
-	"positiveAnswer": "",
-	"negativeAnswer": ""
-},
-{
-	"questionText": "4",
-	"positiveAnswer": "",
-	"negativeAnswer": ""
-},
-{
-	"questionText": "5",
-	"positiveAnswer": "",
-	"negativeAnswer": ""
-},
-{
-	"questionText": "6",
-	"positiveAnswer": "",
-	"negativeAnswer": ""
-}	
-]
+var questionObjects = [];
 
 function question(questionNo, question, positiveAnswer, negativeAnswer) {
 	var newQuestion = {
@@ -42,12 +11,29 @@ function question(questionNo, question, positiveAnswer, negativeAnswer) {
 	return newQuestion;
 }
 
-var questionArray = [];
+function ajax(url, callback) {
 
-for (var i = 0; i < questionObjects.length; i++) {
-	var currentQuestion = question(questionObjects[i], questionObjects[i].questionText, questionObjects[i].positiveAnswer, questionObjects[i].negativeAnswer) ;
-	questionArray.push(currentQuestion)
+	var ajaxRequest = new XMLHttpRequest(); 
+	var resultList = document.querySelector('#result');
 
-};
+	var handleResponse=function()
+	{
+		if(ajaxRequest.status===200 && ajaxRequest.readyState===4){
+			var data = JSON.parse(ajaxRequest.responseText)
+			callback(data)
+		}
+	}
 
-console.log(questionArray)
+	ajaxRequest.onreadystatechange=handleResponse; 
+	ajaxRequest.open('GET', url, true);
+	ajaxRequest.send(null);
+}
+
+function populateQuestions(res) {
+	Object.keys(res).forEach(function(key){
+		var newQuestion = question(key, res[key].questionText, res[key].positiveAnswer, res[key].negativeAnswer)
+		console.log(newQuestion)
+	});
+}
+
+ajax('../questions.json', populateQuestions)

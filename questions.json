@@ -1,34 +1,52 @@
-{ 
-"questions": {
+{
 	"1": {
-		"questionText" : "",
-		"positiveAnswer" : "",
-		"negativeAnswer" : ""
+		"questionText": "How many times a week do you shower?",
+		"positiveAnswer": "Insert niceness",
+		"negativeAnswer": "Insert negativity"
 	},
 	"2": {
-		"questionText" : "",
-		"positiveAnswer" : "",
-		"negativeAnswer" : ""
+		"questionText": "How many hot drinks do you consume a day?",
+		"positiveAnswer": "Insert niceness",
+		"negativeAnswer": "Insert negativity"
 	},
 	"3": {
-		"questionText" : "",
-		"positiveAnswer" : "",
-		"negativeAnswer" : ""
+		"questionText": "Do you leave the tap on when you brush your teeth?",
+		"positiveAnswer": "Insert niceness",
+		"negativeAnswer": "Insert negativity"
 	},
 	"4": {
-		"questionText" : "",
-		"positiveAnswer" : "",
-		"negativeAnswer" : ""
+		"questionText": "How many times a week do you put a clothes wash on?",
+		"positiveAnswer": "Insert niceness",
+		"negativeAnswer": "Insert negativity"
 	},
 	"5": {
-		"questionText" : "",
-		"positiveAnswer" : "",
-		"negativeAnswer" : ""
+		"questionText": "Do you own a dryer?",
+		"positiveAnswer": "Insert niceness",
+		"negativeAnswer": "Insert negativity"
 	},
 	"6": {
-		"questionText" : "",
-		"positiveAnswer" : "",
-		"negativeAnswer" : ""
-		}
+		"questionText": "Do you own a dishwasher?",
+		"positiveAnswer": "Insert niceness",
+		"negativeAnswer": "Insert negativity"
+	},
+	"7": {
+		"questionText": "Do you normally finish all the food on your plate?",
+		"positiveAnswer": "Insert niceness",
+		"negativeAnswer": "Insert negativity"
+	},
+	"8": {
+		"questionText": "Do you own a motor vehicle?",
+		"positiveAnswer": "Insert niceness",
+		"negativeAnswer": "Insert negativity"
+	},
+	"9": {
+		"questionText": "Approximately how full is your general rubbish wheelie bin by the end of one week?",
+		"positiveAnswer": "Insert niceness",
+		"negativeAnswer": "Insert negativity"
+	},
+	"10": {
+		"questionText": "On average, how many light bulbs are in your house?",
+		"positiveAnswer": "Insert niceness",
+		"negativeAnswer": "Insert negativity"
 	}
 }

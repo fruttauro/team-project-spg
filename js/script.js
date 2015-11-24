@@ -30,10 +30,13 @@ function ajax(url, callback) {
 }
 
 function populateQuestions(res) {
+	
 	Object.keys(res).forEach(function(key){
 		var newQuestion = question(key, res[key].questionText, res[key].positiveAnswer, res[key].negativeAnswer)
-		console.log(newQuestion)
+		questionObjects.push(newQuestion);
 	});
+
+	console.log(questionObjects)
 }
 
 ajax('../questions.json', populateQuestions)

@@ -15,3 +15,27 @@ body {
 	padding: 0;
 	text-align: center;
 }
+
+.questionBubble {
+	padding:10px;
+	background-color:white;
+}
+
+.progressBar {
+	width: 100%;
+	background-color: rgba(0,0,0,.2);
+	border-radius: 5px;
+	padding: 5px;
+	margin-top:20px;
+}
+
+.logoHeader {
+	height:100px;
+	margin-top:20px;
+}
+
+.questionImg {
+	height:300px;
+	margin-top:20px;
+	margin-bottom:20px;
+}

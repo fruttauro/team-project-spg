@@ -1,5 +1,6 @@
 // Wonderfully hand crafted hack to load div's on use of back/forward buttons in the browser
-var popStateFired = false;
+var popStateFired = false
+
 window.onpopstate = function(event) {
 	if (popStateFired) {
 		return;

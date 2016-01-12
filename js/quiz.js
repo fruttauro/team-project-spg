@@ -23,3 +23,11 @@ function passAnswer(qNumber) {
 	aNumberDiv.innerHTML = answer;
 	userAnswers.push({qNo: qNumber, answer: answer});
 }
+
+function trueAnswer() {
+	
+}
+
+function falseAnswer() {
+
+}

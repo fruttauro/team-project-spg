@@ -52,9 +52,12 @@
 	<div class="site-wrapper" id="q1">
 		<div class="site-wrapper-inner">
 			<div class="cover-container">
-				<h1>Q1. How many times a week do you shower?</h1>
 				<div class="col-lg-12">
-					<a href="#a1" class="btn btn-lg btn-default">Next</a>
+					<h1>Q1. How many times a week do you shower?</h1>
+					<input type="number" id="q1Answer" class="qNumInput" min="0" step="1" value="0">
+				</div>
+				<div class="col-lg-12">
+					<a href="#a1" onclick="passAnswer(1)" class="btn btn-lg btn-default">Next</a>
 				</div>
 			</div>
 		</div>
@@ -67,6 +70,7 @@
 				<div class="col-lg-12">
 					<p class="lead">Looks like you shower a lot, good to hear. Did you know by simply installing a new, low-flow shower head that you can reduce the amount of water you use as well as the energy to heat it?</p>
 					<p class="lead">Take a look at some <a href="https://www.amazon.co.uk/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=low+flow+shower+head" target="new">here</a>.</p>
+					<p id="a1NumberDiv"></p>
 					<a href="#q2" class="btn btn-lg btn-default">Next</a>
 				</div>
 			</div>
@@ -79,6 +83,7 @@
 				<h1>Q2. How many hot drinks do you consume a day?</h1>
 				<div class="col-lg-12">
 					<img class="questionImg" src="./img/tea_bag.png"/>
+					<input type="number" id="q2Answer" class="qNumInput" min="0" step="1" value="0">
 				</div>
 				<div class="col-lg-12">
 					<a href="#a2" class="btn btn-lg btn-default">Next</a>
@@ -94,6 +99,7 @@
 				<div class="col-lg-12">
 					<p class="lead">Cool, xx cups a day must keep you ticking! Relevant fact scaled to answer here...</p>
 					<p class="lead">Drink coffee or tea? Don't throw them away, get a compost bin and chuck them in there! You'll be growing your own herbs, vegetables and flowers in no time.</p>
+					<p id="q2No"></p>
 					<a href="#q3" class="btn btn-lg btn-default">Next</a>
 				</div>
 			</div>
@@ -315,5 +321,6 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="./js/script.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="./js/quiz.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

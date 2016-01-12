@@ -1,12 +1,12 @@
-// Basic function to pass user input to the answer div
-
 var userAnswers = [];
 
+// Basic function to pass user input to the answer div
 function passAnswer(qNumber) {
-	var answer = document.getElementById("q"+ qNumber +"Answer").value;
+	var answerDiv = document.getElementById("q"+ qNumber +"Answer");
 	aNumberDiv = document.getElementById("a" + qNumber + "NumberDiv");
+	var answer = answerDiv.value;
 
+	// Pass value to answer screen div
 	aNumberDiv.innerHTML = answer;
 	userAnswers.push({qNo: qNumber, answer: answer});
-	console.log(userAnswers)
 }

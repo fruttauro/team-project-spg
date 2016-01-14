@@ -58,8 +58,29 @@ body {
 	margin-top:20px;
 }
 
+.logoHeader:hover {
+	height:110px;
+}
+
 .questionImg {
 	height:300px;
 	margin-top:20px;
 	margin-bottom:20px;
+}
+
+.qNumInput { 
+	color:black;
+}
+
+.slide {
+	opacity: 1;
+	transition: opacity 1s;
+}
+
+.slide.fade {
+	opacity: 0;
+}
+
+.errorText {
+
 }

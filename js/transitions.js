@@ -1,4 +1,6 @@
 $(".questionSelect > a, .btn").click(function(){
-	$("body").hide()
-	$("body").fadeIn(500);
+	if ("onhashchange" in window) {
+		$("body").hide()
+		$("body").fadeIn(500);
+	}
 })

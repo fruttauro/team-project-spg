@@ -39,6 +39,7 @@ body {
 
 .questionSelect a li {
 	text-decoration: none;
+	display:none;
 }
 
 .questionSelect a li:hover {

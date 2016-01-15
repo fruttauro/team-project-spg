@@ -17,6 +17,7 @@ function passAnswer(qNumber) {
 	if(answer == ""){
 		errorDiv.innerHTML = "We kinda need an answer!"
 		this.event.returnValue = false;
+		return;
 	}
 
 	// Pass value to answer screen div
@@ -25,7 +26,7 @@ function passAnswer(qNumber) {
 }
 
 function trueAnswer() {
-	
+
 }
 
 function falseAnswer() {

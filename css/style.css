@@ -72,15 +72,6 @@ body {
 	color:black;
 }
 
-.slide {
-	opacity: 1;
-	transition: opacity 1s;
-}
-
-.slide.fade {
-	opacity: 0;
-}
-
 .errorText {
 
 }

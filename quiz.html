@@ -43,7 +43,10 @@
 						<a href="#q10"><li>10</li></a>
 					</ul>
 					<div class="inner">
-						<div class="progressBar"><p>0%</p></div>
+						<div class="progress">
+							<div class="progress-bar progress-bar-striped" id="progressbar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -77,7 +80,7 @@
 					<p class="lead">Looks like you shower a lot, good to hear. Did you know by simply installing a new, low-flow shower head that you can reduce the amount of water you use as well as the energy to heat it?</p>
 					<p class="lead">Take a look at some <a href="https://www.amazon.co.uk/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=low+flow+shower+head" target="new">here</a>.</p>
 					<p id="a1NumberDiv"></p>
-					<a href="#q2" class="btn btn-lg btn-default">Next</a>
+					<a href="#q2" class="btn btn-lg btn-default next">Next</a>
 				</div>
 			</div>
 		</div>
@@ -107,7 +110,7 @@
 					<p class="lead">Cool, xx cups a day must keep you ticking! Relevant fact scaled to answer here...</p>
 					<p class="lead">Drink coffee or tea? Don't throw them away, get a compost bin and chuck them in there! You'll be growing your own herbs, vegetables and flowers in no time.</p>
 					<p id="a2NumberDiv"></p>
-					<a href="#q3" class="btn btn-lg btn-default">Next</a>
+					<a href="#q3" class="btn btn-lg btn-default next">Next</a>
 				</div>
 			</div>
 		</div>
@@ -136,7 +139,7 @@
 					<p class="lead">If you brush your teeth twice a day like a good person, you could be wasting around -amount here- of water every day.</p>
 					<p class="lead">Do you really need that tap on?</p>
 					<p id="a3NumberDiv"></p>
-					<a href="#q4" class="btn btn-lg btn-default">Next</a>
+					<a href="#q4" class="btn btn-lg btn-default next">Next</a>
 				</div>
 			</div>
 		</div>
@@ -166,7 +169,7 @@
 					<p class="lead">Good to see you keep your clothes clean. However, did you know most washing machines have an eco setting?</p>
 					<p class="lead">Fact about washing on lower temperature here.</p>
 					<p id="a4NumberDiv"></p>
-					<a href="#q5" class="btn btn-lg btn-default">Next</a>
+					<a href="#q5" class="btn btn-lg btn-default next">Next</a>
 				</div>
 			</div>
 		</div>
@@ -193,7 +196,7 @@
 			<div class="cover-container">
 				<h1>Something about Dryers</h1>
 				<div class="col-md-12">
-					<a href="#q6" class="btn btn-lg btn-default">Next</a>
+					<a href="#q6" class="btn btn-lg btn-default next">Next</a>
 				</div>
 			</div>
 		</div>
@@ -219,7 +222,7 @@
 			<div class="cover-container">
 				<h1>Something about Dishwashers</h1>
 				<div class="col-md-12">
-					<a href="#q7" class="btn btn-lg btn-default">Next</a>
+					<a href="#q7" class="btn btn-lg btn-default next">Next</a>
 				</div>
 			</div>
 		</div>
@@ -242,7 +245,7 @@
 			<div class="cover-container">
 				<h1>Something about food waste</h1>
 				<div class="col-md-12">
-					<a href="#q8" class="btn btn-lg btn-default">Next</a>
+					<a href="#q8" class="btn btn-lg btn-default next">Next</a>
 				</div>
 			</div>
 		</div>
@@ -265,7 +268,7 @@
 			<div class="cover-container">
 				<h1>Something about fuel and tyre pressure</h1>
 				<div class="col-md-12">
-					<a href="#q9" class="btn btn-lg btn-default">Next</a>
+					<a href="#q9" class="btn btn-lg btn-default next">Next</a>
 				</div>
 			</div>
 		</div>
@@ -290,7 +293,7 @@
 			<div class="cover-container">
 				<h1>Something about waste and recycling</h1>
 				<div class="col-md-12">
-					<a href="#q10" class="btn btn-lg btn-default">Next</a>
+					<a href="#q10" class="btn btn-lg btn-default next">Next</a>
 				</div>
 			</div>
 		</div>
@@ -301,9 +304,6 @@
 			<div class="cover-container">
 				<h1>Q10. On average, how many light bulbs are in your house?</h1>
 				<div class="col-md-12">
-					<svg height="1024" width="1024" xmlns="http://www.w3.org/2000/svg">
-						<path d="M512 64c-176.731 0-320 143.269-320 320 0 104.69 50.278 197.633 128 256.015V832c0 35.346 28.653 64 64 64 0 35.346 28.653 64 64 64h128c35.347 0 64-28.654 64-64 35.347 0 64-28.654 64-64V640.015C781.722 581.633 832 488.69 832 384 832 207.269 688.731 64 512 64zM640 800c0 17.673-14.326 32-32 32H416c-17.674 0-32-14.327-32-32v-32h256V800zM704 553.307c-33.234 33.03-64 42.389-64 124.041V704h-64V576l128-128v-64l-64-64-64 64-64-64-64 64-64-64-64 64v64l128 128v128h-64v-26.652c0-81.652-30.766-91.011-64-124.041C280.177 508.18 256 448.918 256 384c0-141.385 114.615-256 256-256s256 114.615 256 256C768 448.918 743.823 508.18 704 553.307zM512 576L384 448v-64l64 64 64-64 64 64 64-64v64L512 576z" />
-					</svg>
 					<input type="number" id="q10Answer" class="qNumInput" min="0" step="1">
 				</div>
 				<div class="col-md-12">
@@ -320,7 +320,7 @@
 				<h1>something about energy saving bulbs</h1>
 				<p id="a10NumberDiv"></p>
 				<div class="col-md-12">
-					<a href="#finished" class="btn btn-lg btn-default">Next</a>
+					<a href="#finished" class="btn btn-lg btn-default next">Next</a>
 				</div>
 			</div>
 		</div>

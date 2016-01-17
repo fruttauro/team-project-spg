@@ -60,7 +60,10 @@
 				<div class="row">
 					<div class="col-md-12">
 						<h1>Q1. How many times a week do you shower?</h1>
-						<input type="number" id="q1Answer" class="qNumInput" min="0" step="1">
+						<div class="range-slider">
+							<input class="input-range" type="range" value="0" min="0" max="10" id="q1Answer">
+							<span class="range-value"></span>
+						</div>
 					</div>
 				</div>
 				<div class="row">
@@ -93,7 +96,10 @@
 				<h1>Q2. How many hot drinks do you consume a day?</h1>
 				<div class="col-md-12">
 					<img class="questionImg" src="./img/tea_bag.png"/>
-					<input type="number" id="q2Answer" class="qNumInput" min="0" step="1">
+					<div class="range-slider">
+						<input class="input-range" type="range" value="0" min="0" max="10" id="q2Answer">
+						<span class="range-value"></span>
+					</div>
 				</div>
 				<div class="col-md-12">
 					<a href="#a2"  onclick="passAnswer(2)" class="btn btn-lg btn-default">Next</a>
@@ -152,7 +158,10 @@
 				<h1>Q4. How many times a week do you put a clothes wash on?</h1>
 				<div class="col-md-12">
 					<img class="questionImg" src="./img/washing_machine.png"/>
-					<input type="number" id="q4Answer" class="qNumInput" min="0" step="1">
+					<div class="range-slider">
+						<input class="input-range" type="range" value="0" min="0" max="10" id="q4Answer">
+						<span class="range-value"></span>
+					</div>
 				</div>
 				<div class="col-md-12">
 					<a href="#a4" onclick="passAnswer(4)" class="btn btn-lg btn-default">Next</a>
@@ -306,7 +315,10 @@
 			<div class="cover-container">
 				<h1>Q10. On average, how many light bulbs are in your house?</h1>
 				<div class="col-md-12">
-					<input type="number" id="q10Answer" class="qNumInput" min="0" step="1">
+					<div class="range-slider">
+						<input class="input-range" type="range" value="0" min="0" max="10" id="q10Answer">
+						<span class="range-value"></span>
+					</div>
 				</div>
 				<div class="col-md-12">
 					<a href="#a10" onclick="passAnswer(10)" class="btn btn-lg btn-default">Next</a>

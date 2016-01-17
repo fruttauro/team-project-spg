@@ -1,13 +1,25 @@
-// Get hold of the last and current div so we know what to transition out and in
 var oldDiv = "";
 var newDiv = "";
+var oDiv = "";
+var nDiv = "";
+var tIn = ['zoomIn', 'zoomInUp', 'rollIn', 'lightSpeedIn', 'flipInX'];
+var tOut = ['rotateOutDownRight', 'hinge', 'rollOut', 'lightSpeedOut', 'flipOutX'];
 
 $(".questionSelect > a, .btn").click(function(){
-
 	window.onhashchange = function(e){
 
-		oldDiv = "#" + e.oldURL.split("#")[1];
-		newDiv = "#" + e.newURL.split("#")[1];
+		oDiv = e.oldURL.split("#")[1];
+		nDiv = e.newURL.split("#")[1];
+		var oldDiv = document.getElementById(oDiv);
+		var newDiv = document.getElementById(nDiv);
+		var rTIn = tIn[Math.floor(Math.random() * tIn.length)];
+		var rTOut = tOut[Math.floor(Math.random() * tOut.length)];
+
+		if (!oldDiv == null) {
+			oldDiv.className='cover-container hidden';
+		}
+
+		newDiv.getElementsByClassName('cover-container')[0].className='cover-container ' + rTIn;
 	}
 })
 
@@ -24,7 +36,7 @@ $("#startQuiz").click(function(){
 
 $(".next").click(function() {
 
-	currentProgress = oldDiv.split("q")[1] + 0;
+	currentProgress = oDiv.split("q")[1] + 0;
 	console.log(currentProgress)
 
 	if(currentProgress <= progressBar.getAttribute("aria-valuenow")) {
@@ -32,13 +44,13 @@ $(".next").click(function() {
 	}
 
 	// Ensure links are displayed to questions 
-	currentQuestion = "#q" + (parseInt(oldDiv.split("q")[1]) + 1) + "Link";
+	currentQuestion = "#q" + (parseInt(oDiv.split("q")[1]) + 1) + "Link";
 
 	if(!$(currentQuestion)){ 
 		return; 
 	} 
 
-	$("#q" + (parseInt(oldDiv.split("q")[1]) + 1) + "Link").show();
+	$("#q" + (parseInt(oDiv.split("q")[1]) + 1) + "Link").show();
 
 
 	progressBar.setAttribute("aria-valuenow", currentProgress)

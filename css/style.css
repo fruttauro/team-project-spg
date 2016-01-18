@@ -128,7 +128,7 @@ input[type=range] {
 }
 
 .drawSVG {
-	stroke-dasharray: 2000;
+	stroke-dasharray: 2300;
 	stroke-offset:0;
 	-webkitanimation: dash 3s linear forwards;
 	-o-animation: dash 3s linear forwards;

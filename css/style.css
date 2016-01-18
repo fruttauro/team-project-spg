@@ -119,6 +119,10 @@ input[type=range] {
 	content: '';
 }
 
+p.lead span {
+	font-weight:bold;
+}
+
 .drawSVG{
 	fill:none;
 	stroke: #FFFFFF;

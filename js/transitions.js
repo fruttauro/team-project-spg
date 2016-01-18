@@ -49,7 +49,6 @@ $(".questionSelect > a, .btn").click(function(){
 				// Hack to trigger the CSS animation again
 				currentSVG.offsetWidth = currentSVG.offsetWidth;
 			}
-			console.log(currentSVG)
 
 			currentSVG.classList.add('drawSVG');
 		}
@@ -71,7 +70,6 @@ $("#startQuiz").click(function(){
 $(".next").click(function() {
 
 	currentProgress = oDiv.split("q")[1] + 0;
-	console.log(currentProgress)
 
 	if(currentProgress <= progressBar.getAttribute("aria-valuenow")) {
 		return;

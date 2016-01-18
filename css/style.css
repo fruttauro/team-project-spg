@@ -118,3 +118,29 @@ input[type=range] {
 	border-bottom: 7px solid transparent;
 	content: '';
 }
+
+.drawSVG{
+	fill:none;
+	stroke: #FFFFFF;
+	stroke-width:5;
+	stroke-linejoin:round;
+	stroke-miterlimit:10;
+}
+
+.drawSVG {
+	stroke-dasharray: 2000;
+	stroke-offset:0;
+	-webkitanimation: dash 3s linear forwards;
+	-o-animation: dash 3s linear forwards;
+	-moz-animation: dash 3s linear forwards;
+	animation: dash 3s linear forwards;
+}
+
+@-webkit-keyframes dash{
+	from{
+		stroke-dashoffset: 2000;
+	}
+	to{
+		stroke-dashoffset: 0;
+	}
+}

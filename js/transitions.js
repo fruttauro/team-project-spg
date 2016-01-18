@@ -20,7 +20,41 @@ $(".questionSelect > a, .btn").click(function(){
 		}
 
 		newDiv.getElementsByClassName('cover-container')[0].className='cover-container ' + rTIn;
+
+		// If we are going to a question page, animate the image
+		var currentSVGs = [];
+		//custom handing for q9 because it has multiple paths
+		if (nDiv == "q9") {
+			currentSVGs = document.getElementsByClassName("q9ImgPath");
+
+			if(currentSVGs.length > 0) {
+				for (var i = 0; i < currentSVGs.length; i++) {
+					if(currentSVGs[i].classList.contains('drawSVG')) {
+						currentSVGs[i].classList.remove('drawSVG');
+						currentSVGs[i].offsetWidth = currentSVGs[i].offsetWidth;
+					}
+
+					currentSVGs[i].classList.add('drawSVG')
+				};
+			}
+
+		} 
+		// Handling for the rest of the questions
+		else {
+			var currentSVG = document.getElementById(nDiv + "ImgPath");
+			if(nDiv.indexOf("q") != -1) {
+
+				if(currentSVG.classList.contains('drawSVG')) {
+					currentSVG.classList.remove('drawSVG');
+				// Hack to trigger the CSS animation again
+				currentSVG.offsetWidth = currentSVG.offsetWidth;
+			}
+			console.log(currentSVG)
+
+			currentSVG.classList.add('drawSVG');
+		}
 	}
+}
 })
 
 // Hook up the progress bar to questions to record progress

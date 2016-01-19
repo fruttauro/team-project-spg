@@ -37,7 +37,6 @@ $(".questionSelect > a, .btn").click(function(){
 					currentSVGs[i].classList.add('drawSVG')
 				};
 			}
-
 		} 
 		// Handling for the rest of the questions
 		else {
@@ -83,7 +82,6 @@ $(".next").click(function() {
 	} 
 
 	$("#q" + (parseInt(oDiv.split("q")[1]) + 1) + "Link").show();
-
 
 	progressBar.setAttribute("aria-valuenow", currentProgress)
 	progressBar.style.width = currentProgress + "%";

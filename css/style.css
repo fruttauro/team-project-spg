@@ -134,10 +134,10 @@ p.lead span {
 .drawSVG {
 	stroke-dasharray: 2300;
 	stroke-offset:0;
-	-webkitanimation: dash 3s linear forwards;
-	-o-animation: dash 3s linear forwards;
-	-moz-animation: dash 3s linear forwards;
-	animation: dash 3s linear forwards;
+	-webkitanimation: dash 5s linear forwards;
+	-o-animation: dash 5s linear forwards;
+	-moz-animation: dash 5s linear forwards;
+	animation: dash 5s linear forwards;
 }
 
 @-webkit-keyframes dash{

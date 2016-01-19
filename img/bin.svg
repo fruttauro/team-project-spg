@@ -1,0 +1,44 @@
+
+<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+
+<defs>
+<style type="text/css">
+
+	.st8{fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+.st8 {
+stroke-dasharray: 2000;
+stroke-offset:0;
+-webkitanimation: dash 5s linear forwards;
+-o-animation: dash 5s linear forwards;
+-moz-animation: dash 5s linear forwards;
+animation: dash 5s linear forwards;
+}
+
+@-webkit-keyframes dash{
+from{
+stroke-dashoffset: 2000;
+}
+to{
+stroke-dashoffset: 0;
+}
+}
+</style>
+</defs>
+
+<path class="st8" d="M336.987,282.654L394,815.548h167.133c-0.39-1.197-0.725-2.414-1.037-3.638
+	c-7.064-9.208-9.565-21.573-8.336-33.351c-0.342-5.189,0.773-10.256,2.18-15.239c0.029-0.104,0.064-0.2,0.1-0.297
+	c4.112-19.767,20.812-36.608,68.011-32.413l81.447-447.956H336.987z"/>
+<path class="st8" d="M677.057,253.531H323.688v17.243h369.625C686.267,266.738,680.062,260.647,677.057,253.531z"/>
+<polyline class="st8" points="428.475,209.096 643.354,209.096 643.354,219.044 "/>
+<path class="st8" d="M428.475,209.096c-0.663-1.327,0.663-3.316-0.663-3.979c-25.202-2.653-49.741-1.326-74.28-0.663
+	c-2.653,4.643,0,9.948-1.989,14.591c-6.632,0.663-13.264-0.664-19.896,0.663c0,7.295-0.663,13.927,0.663,21.223
+	c113.409,0,227.481,0,341.05,0l13.939-21.886c-14.648,0-29.297,0-43.945,0"/>
+<circle class="st8" cx="711.665" cy="245.241" r="25.534"/>
+<circle class="st8" cx="606.879" cy="783.771" r="43.148"/>
+<circle class="st8" cx="606.879" cy="783.771" r="20.393"/>
+<path class="st8" d="M506.795,729.765c0,0-139.267,8.953-102.46-116.387c36.806-125.341,102.46-124.346,102.46-124.346
+	 M506.795,729.765c0,0,139.268,8.953,102.461-116.387c-36.807-125.341-102.461-124.346-102.461-124.346"/>
+<path class="st8" d="M505.137,486.379c0,0-58.69-5.968-45.759-35.812c12.932-29.843,39.791-21.885,45.759-9.947 M503.727,486.379
+	c0,0,58.691-5.968,45.759-35.812c-12.932-29.843-39.79-21.885-45.759-9.947"/>
+</svg>

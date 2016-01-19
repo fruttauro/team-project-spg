@@ -102,11 +102,11 @@ function yesOrNo(yesNo, qNumber) {
 			break;
 
 			case "a6AnswerDiv":
-			aAnswerDiv.innerHTML = "<h1>Don't be lazy...</h1><p class='lead'>While using a dishwasher is getting more and more efficient the standard dishwasher uses around 13 litres of water per cycle.</p><p class='lead'>Whereas a standard washing bowl in the sink is 8-9 litres. So why not try using the dishwasher a few times less during the week and do a bowl of dishes instead?</p>"
+			aAnswerDiv.innerHTML = "<h1>Don't be lazy...</h1><p class='lead'>While using a dishwasher is getting more and more efficient, the standard dishwasher uses around 13 litres of water per cycle.</p><p class='lead'>A standard washing bowl in the sink is 8-9 litres. So, why not try using the dishwasher a few times less during the week and do a bowl of dishes instead?</p>"
 			break;
 
 			case "a7AnswerDiv":
-			aAnswerDiv.innerHTML = "<h1>Nomnomnom</h1><p class='lead'>Good Job, just make sure your storing your food in the correct way because even if you eat all your food on your plate. Food can still go to waste if its not stored correctly as it goes off faster.</p>"
+			aAnswerDiv.innerHTML = "<h1>Nomnomnom</h1><p class='lead'>Good Job, just make sure you're storing your food in the correct way because even if you eat all your food on your plate, food can still go to waste if its not stored correctly as it goes off faster.</p>"
 			break;
 
 			case "a8AnswerDiv":

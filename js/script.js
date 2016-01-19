@@ -1,16 +1,3 @@
-// Wonderfully hand crafted hack to load div's on use of back/forward buttons in the browser
-var popStateFired = false
-
-window.onpopstate = function(e) {
-	if (popStateFired) {
-		return;
-	}
-
-	popStateFired = true
-	window.location = document.location
-	popStateFired = false
-};
-
 // Dynamic loading of questions and answers
 var questionObjects = [];
 

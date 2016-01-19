@@ -11,9 +11,17 @@ window.onpopstate = function(e) {
 	popStateFired = false
 };
 
-var userAnswers = [];
+// Js for range sliders
+var range = $('.input-range')
+var value = $('.range-value');
+value.html(range.attr('value'));
+range.on('input', function(){
+	value.html(this.value);
+});
 
 // Basic function to pass user input to the answer div
+var userAnswers = [];
+
 function passAnswer(qNumber) {
 
 	var answerDiv = document.getElementById("q"+ qNumber +"Answer");

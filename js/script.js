@@ -41,10 +41,3 @@ function populateQuestions(res) {
 }
 
 //var test = ajax('../questions.json', populateQuestions)
-
-var range = $('.input-range')
-var value = $('.range-value');
-value.html(range.attr('value'));
-range.on('input', function(){
-	value.html(this.value);
-});

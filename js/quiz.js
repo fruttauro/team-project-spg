@@ -56,7 +56,7 @@ function passAnswer(qNumber) {
 		break;
 
 		case "a10NumberDiv":
-		// Number of bulbs * 12 pounds a year
+		// Number of bulbs * 12 pounds a years
 		answer = answer * 12
 		aNumberDiv.innerHTML = "&pound" + answer;
 		break;
@@ -65,10 +65,56 @@ function passAnswer(qNumber) {
 	userAnswers.push({qNo: qNumber, answer: answer});
 }
 
-function trueAnswer() {
+function yesOrNo(yesNo, qNumber) {
+	aAnswerDiv = document.getElementById("a" + qNumber + "AnswerDiv");
 
-}
+	if(yesNo == "yes") {
 
-function falseAnswer() {
+		switch (aAnswerDiv.id) {
+			case "a3AnswerDiv":
+			aAnswerDiv.innerHTML += "<p class='lead'>If you brush your teeth twice a day for 2 minutes like a good person, you could be wasting around 24 litres of water every day.</p><p class='lead'>By turning the tap off you can save around 12-18 litres per time.</p>"
+			break;
 
+			case "a5AnswerDiv":
+			aAnswerDiv.innerHTML += "<p class='lead'>Tumble dryers are even worse than washing machines, costing around 62p per cycle, so if you use it twice a week over a year it costs around £64.50</p>.<p class='lead'>However if in the summer months you hang your clothes outside or on a clothes horse you can save over £15.</p>"
+			break;
+
+			case "a6AnswerDiv":
+			aAnswerDiv.innerHTML += "<p class='lead'>While using a dishwasher is getting more and more efficient the standard dishwasher uses around 13 litres of water per cycle.</p><p class='lead'>Whereas a standard washing bowl in the sink is 8-9 litres. So why not try using the dishwasher a few times less during the week and do a bowl of dishes instead?</p>"
+			break;
+
+			case "a7AnswerDiv":
+			aAnswerDiv.innerHTML += "<p class='lead'>Good Job, just make sure your storing your food in the correct way because even if you eat all your food on your plate. Food can still go to waste if its not stored correctly as it goes off faster.</p>"
+			break;
+
+			case "a8AnswerDiv":
+			aAnswerDiv.innerHTML += "<p class='lead'>Did you know under-inflated tyres will increase your car’s fuel consumption, wear out faster and reduce your car’s stability.</p>"
+			break;
+		}
+
+	} else {
+
+		switch (aAnswerDiv.id) {
+			case "a3AnswerDiv":
+			aAnswerDiv.innerHTML += "<p class='lead'>Well done by turning the tap off you are saving around 12-18 litres of water per time.</p>"
+			break;
+
+			case "a5AnswerDiv":
+			aAnswerDiv.innerHTML += "<p class='lead'>Good, you're saving nearly £70 a year by not having a tumble dryer.</p>"
+			break;
+
+			case "a6AnswerDiv":
+			aAnswerDiv.innerHTML += "<p class='lead'>By not having a dishwasher you're saving 4-5 litres of water per wash so keep it up!</p>"
+			break;
+
+			case "a7AnswerDiv":
+			aAnswerDiv.innerHTML += "<p class='lead'>Food waste costs the average household £470 a year. There are two main reasons why we throw away good food: we cook or prepare too much or we don't use it in time.</p><p class='lead'>So to cut down why not if you make to much food freeze it for another meal?</p>"
+			break;
+
+			case "a8AnswerDiv":
+			aAnswerDiv.innerHTML += "<p class='lead'>Whether you're conciously saving the planet by cycling (good work if so!) or just don't drive, make sure your friends and family check their tyre pressure so they perform as economically as possible.</p>"
+			break;
+		}
+
+	}
 }

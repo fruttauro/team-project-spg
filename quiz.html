@@ -186,8 +186,8 @@
 
 			</div>
 			<div class="col-md-12">
-				<a href="#a3" class="btn btn-lg btn-default">Yes</a>
-				<a href="#a3" class="btn btn-lg btn-default">No</a>
+				<a href="#a3" class="btn btn-lg btn-default" onclick="yesOrNo('yes', 3)">Yes</a>
+				<a href="#a3" class="btn btn-lg btn-default" onclick="yesOrNo('no', 3)">No</a>
 			</div>
 		</div>
 	</div>
@@ -196,11 +196,9 @@
 <div class="site-wrapper" id="a3">
 	<div class="site-wrapper-inner">
 		<div class="cover-container">
-			<h1>Do you really need to do that?</h1>
 			<div class="col-md-12">
-				<p class="lead">If you brush your teeth twice a day like a good person, you could be wasting around -amount here- of water every day.</p>
-				<p class="lead">Do you really need that tap on?</p>
-				<p id="a3NumberDiv"></p>
+				<div id="a3AnswerDiv">
+				</div>
 				<a href="#q4" class="btn btn-lg btn-default next">Next</a>
 			</div>
 		</div>
@@ -280,8 +278,8 @@
 
 		</div>
 		<div class="col-md-12">
-			<a href="#a5" class="btn btn-lg btn-default">Yes</a>
-			<a href="#a5" class="btn btn-lg btn-default">No</a>
+			<a href="#a5" class="btn btn-lg btn-default" onclick="yesOrNo('yes', 5)">Yes</a>
+			<a href="#a5" class="btn btn-lg btn-default" onclick="yesOrNo('no', 5)">No</a>
 		</div>
 	</div>
 </div>
@@ -291,7 +289,8 @@
 <div class="site-wrapper" id="a5">
 	<div class="site-wrapper-inner">
 		<div class="cover-container">
-			<h1>Something about Dryers</h1>
+			<div id="a5AnswerDiv">
+			</div>
 			<div class="col-md-12">
 				<a href="#q6" class="btn btn-lg btn-default next">Next</a>
 			</div>
@@ -321,8 +320,8 @@
 
 			</div>
 			<div class="col-md-12">
-				<a href="#a6" class="btn btn-lg btn-default">Yes</a>
-				<a href="#a6" class="btn btn-lg btn-default">No</a>
+				<a href="#a6" class="btn btn-lg btn-default" onclick="yesOrNo('yes', 6)">Yes</a>
+				<a href="#a6" class="btn btn-lg btn-default" onclick="yesOrNo('no', 6)">No</a>
 			</div>
 		</div>
 	</div>
@@ -331,7 +330,8 @@
 <div class="site-wrapper" id="a6">
 	<div class="site-wrapper-inner">
 		<div class="cover-container">
-			<h1>Something about Dishwashers</h1>
+			<div id="a6AnswerDiv">
+			</div>
 			<div class="col-md-12">
 				<a href="#q7" class="btn btn-lg btn-default next">Next</a>
 			</div>
@@ -361,8 +361,8 @@
 		</svg>
 
 		<div class="col-md-12">
-			<a href="#a7" class="btn btn-lg btn-default">Yes</a>
-			<a href="#a7" class="btn btn-lg btn-default">No</a>
+			<a href="#a7" class="btn btn-lg btn-default" onclick="yesOrNo('yes', 7)">Yes</a>
+			<a href="#a7" class="btn btn-lg btn-default" onclick="yesOrNo('no', 7)">No</a>
 		</div>
 	</div>
 </div>
@@ -371,7 +371,8 @@
 <div class="site-wrapper" id="a7">
 	<div class="site-wrapper-inner">
 		<div class="cover-container">
-			<h1>Something about food waste</h1>
+			<div id="a7AnswerDiv">
+			</div>
 			<div class="col-md-12">
 				<a href="#q8" class="btn btn-lg btn-default next">Next</a>
 			</div>
@@ -401,8 +402,8 @@
 		</svg>
 
 		<div class="col-md-12">
-			<a href="#a8" class="btn btn-lg btn-default">Yes</a>
-			<a href="#a8" class="btn btn-lg btn-default">No</a>
+			<a href="#a8" class="btn btn-lg btn-default" onclick="yesOrNo('yes', 8)">Yes</a>
+			<a href="#a8" class="btn btn-lg btn-default" onclick="yesOrNo('no', 8)">No</a>
 		</div>
 	</div>
 </div>
@@ -411,7 +412,8 @@
 <div class="site-wrapper" id="a8">
 	<div class="site-wrapper-inner">
 		<div class="cover-container">
-			<h1>Something about fuel and tyre pressure</h1>
+			<div id="a8AnswerDiv">
+			</div>
 			<div class="col-md-12">
 				<a href="#q9" class="btn btn-lg btn-default next">Next</a>
 			</div>

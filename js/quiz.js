@@ -184,14 +184,37 @@ function yesOrNo(yesNo, qNumber) {
 	}
 }
 
+var userScore = 10;
 function finishQuiz() {
+	var graded = false;
 	var scoreDiv = document.getElementById("finalScore");
-	var scoreList = document.getElementById("scoreList");
+	var currentQuestion = "";
+
+	if(graded == true) return;
 
 	for (var i = 0; i < userAnswers.length; i++) {
-		var questionLi = document.createElement("li");
-		var questionText = document.createTextNode(userAnswers[i].qNo + " - " + userAnswers[i].answer);
-		questionLi.appendChild(questionText);
-		scoreList.appendChild(questionLi);
-	};
+		currentQuestion = userAnswers[i];
+		switch (currentQuestion.qNo) {
+			case 1:
+			if(currentQuestion.answer < 8) userScore += 10
+				break;
+			case 2:
+			if(currentQuestion.answer < 4) userScore += 10
+				break;
+			case 3:
+			case 5:
+			case 6:
+			case 8:
+			if(currentQuestion.answer == "No") userScore += 10
+				break;
+			case 7:
+			if(currentQuestion.answer == "Yes") userScore += 10
+				break;
+			case 10:
+			if(currentQuestion.answer < 30) userScore += 10
+				break;
+		}
+	}
+	graded = true;
+	scoreDiv.innerHTML += "<h2>" + userScore + "%</h2>";
 }

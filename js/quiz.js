@@ -21,6 +21,13 @@ sliderRange.on('input', function(){
 
 // Basic function to pass user input to the answer div
 var userAnswers = [];
+function userAnswer(qNo, answer) {
+	var newAnswer = {
+		qNo: qNo,
+		answer: answer
+	}
+	return newAnswer;
+}
 
 function passAnswer(qNumber) {
 
@@ -34,6 +41,20 @@ function passAnswer(qNumber) {
 	if(!aAnswered0Div.classList.contains("hidden")) aAnswered0Div.classList.add("hidden");
 
 	var answer = answerDiv.value;
+	var uAnswer = userAnswer(qNumber, answer);
+	
+	var found = false;
+	for (var i = 0; i < userAnswers.length; i++) {
+		if(userAnswers[i].qNo == uAnswer.qNo) {
+			userAnswers[i].answer = uAnswer.answer;
+			found = true;
+			break;
+		}
+	};
+
+	if(!found) {
+		userAnswers.push(uAnswer);
+	}
 
 	// Validation to ensure user can't advance with no value entered
 	// This will need moving out when handling for true/false answers is implemented

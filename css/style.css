@@ -159,3 +159,8 @@ p.lead span {
 		stroke-dashoffset: 0;
 	}
 }
+
+#finalScore {
+	border: 2px solid white;
+	border-radius: 5px;
+}

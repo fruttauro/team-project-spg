@@ -185,6 +185,8 @@ function yesOrNo(yesNo, qNumber) {
 }
 
 var userScore = 10;
+var userTitle = "Unworthy";
+
 function finishQuiz() {
 	var graded = false;
 	var scoreDiv = document.getElementById("finalScore");
@@ -215,6 +217,20 @@ function finishQuiz() {
 				break;
 		}
 	}
-	graded = true;
+
+	if(userScore <= 20) {
+		userTitle = "Muddy Footprint"
+	} else if(userScore <= 40) {
+		userTitle = "Green at Being Green"
+	} else if(userScore <= 60){
+		userTitle = "Blooming Flower"
+	} else if(userScore <= 80) {
+		userTitle = "Mean Green Machine"
+	} else if(userScore <= 100) {
+		userTitle = "Carbon Neutral God"
+	}
+
 	scoreDiv.innerHTML += "<h2>" + userScore + "%</h2>";
+	scoreDiv.innerHTML += "<p class='lead'>You have been awarded the title of <span class='strong'>" + userTitle +  "</span>.</p>";
+	graded = true;
 }

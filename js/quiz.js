@@ -230,7 +230,6 @@ function finishQuiz() {
 		userTitle = "Carbon Neutral God"
 	}
 
-	scoreDiv.innerHTML = "<h2>" + userScore + "%</h2>";
-	scoreDiv.innerHTML = "<p class='lead'>You have been awarded the title of <span class='strong'>" + userTitle +  "</span>.</p>";
+	scoreDiv.innerHTML = "<h2>" + userScore + "%</h2><p class='lead'>You have been awarded the title of <span class='strong'>" + userTitle +  "</span>.</p>";
 	graded = true;
 }

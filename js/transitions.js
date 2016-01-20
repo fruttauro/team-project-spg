@@ -82,6 +82,8 @@ $(".next").click(function() {
 		return; 
 	} 
 
+	var answeredQ = document.getElementById("q" + oDiv.split("q")[1] + "Link");
+	answeredQ.classList.add("answeredQ");
 	$("#q" + (parseInt(oDiv.split("q")[1]) + 1) + "Link").show();
 
 	progressBar.setAttribute("aria-valuenow", currentProgress)

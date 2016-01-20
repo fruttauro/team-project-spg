@@ -48,6 +48,17 @@ body {
 	box-shadow: 3px 2px rgba(0,0,0,.3);
 }
 
+.answeredQ {
+	background-color:#337ab7 !important;
+	color: white !important;
+}
+
+.answeredQ:hover {
+	background-color: white !important;
+	color: #337ab7 !important;
+	box-shadow: 3px 2px rgba(0,0,0,.3) !important;
+}
+
 .progressBar {
 	width: 100%;
 	background-color: rgba(0,0,0,.2);

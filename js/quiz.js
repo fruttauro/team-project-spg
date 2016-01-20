@@ -26,7 +26,13 @@ function passAnswer(qNumber) {
 
 	var answerDiv = document.getElementById("q"+ qNumber + "Answer");
 	aNumberDiv = document.getElementById("a" + qNumber + "NumberDiv");
+
 	aAnswerDiv = document.getElementById("a" + qNumber + "AnswerDiv")
+	if(!aAnswerDiv.classList.contains("hidden")) aAnswerDiv.classList.add("hidden")
+
+		aAnswered0Div = document.getElementById("a" + qNumber + "Answered0Div");
+	if(!aAnswered0Div.classList.contains("hidden")) aAnswered0Div.classList.add("hidden");
+
 	var answer = answerDiv.value;
 
 	// Validation to ensure user can't advance with no value entered
@@ -43,27 +49,12 @@ function passAnswer(qNumber) {
 	}
 
 	if(answer == 0) {
-		switch (aAnswerDiv.id) {
-			case "a1AnswerDiv":
-			aAnswerDiv.innerHTML = "<h1>I hope you're bathing</h1><p class='lead'>Looks like you don't have a shower or just don't like them! That's fine with us.</p>"
-			break;
-			case "a2AnswerDiv":
-			aAnswerDiv.innerHTML = "<h1>No caffeine!?</h1><p class='lead'>You're a better person than us, bravo on getting through the day with nothing but the wits you were born with!</p>"
-			break;
-			case "a4AnswerDiv":
-			aAnswerDiv.innerHTML = "<h1>We won't ask</h1><p class='lead'>We will assume that your clothes get cleaned somehow and you're just not responsible for it personally...</p>"
-			break;
-			case "a10AnswerDiv":
-			aAnswerDiv.innerHTML = "<h1>Do you live in a cave?</h1><p class='lead'>Come on now, let's not be silly. Go on back and give us a proper answer!</p>"
-			break;
-		}
-
+		aAnswerDiv.classList.add("hidden")
+		aAnswered0Div.classList.remove("hidden");
 		return;
 	}
 
-	// Need to edit this so that it only holds the most current answer
-	// if they change their answer
-	userAnswers.push({qNo: qNumber, answer: answer});
+	aAnswerDiv.classList.remove("hidden")
 
 	switch (aNumberDiv.id) {
 

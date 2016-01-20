@@ -71,7 +71,6 @@ $(".next").click(function() {
 	currentProgress = oDiv.split("q")[1] + 0;
 
 	if(parseInt(currentProgress) <= progressBar.getAttribute("aria-valuenow")) {
-		console.log("test")
 		return;
 	}
 

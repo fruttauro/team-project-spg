@@ -99,6 +99,12 @@ input[type=range] {
 	width: 90%;
 }
 
+@media screen and (max-width: 768px) {
+	input[type=range] {
+		width: 60%;
+	}
+}
+
 .range-value {
 	display: inline-block;
 	position: relative;

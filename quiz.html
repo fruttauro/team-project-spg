@@ -544,7 +544,7 @@
 					<p class="lead">A standard 60 watt bulb that’s turned on for on average 5 hours a day uses around £12 of electricity a year. That means your house is using around <span id="a10NumberDiv"></span> of electricity a year.</p> 
 					<p class="lead">Why not switch to energy saving bulbs which when left on for 5 hours a day only costs around £3 a year.</p>
 				</div>
-				<a href="#finished" class="btn btn-lg btn-primary next">Results <i class="fa fa-hand-o-right"></i></a>
+				<a href="#finished" onclick="finishQuiz()" class="btn btn-lg btn-primary next">Results <i class="fa fa-hand-o-right"></i></a>
 			</div>
 		</div>
 	</div>
@@ -552,9 +552,10 @@
 
 <div class="site-wrapper" id="finished">
 	<div class="site-wrapper-inner">
-		<div class="cover-container">
+		<div id="finalScore" class="cover-container">
 			<h1>Fin</h1>
-			<p class="lead">Score --%</p>
+			<p class="lead">Congratulations, you've finished the quiz! Let's review your answers and see how you got on.</p>
+			<ul class="list-unstyled" id="scoreList"></ul>
 		</div>
 	</div>
 </div>

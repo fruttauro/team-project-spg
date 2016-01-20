@@ -19,14 +19,32 @@ sliderRange.on('input', function(){
 	sliderValue.html(this.value);
 });
 
-// Basic function to pass user input to the answer div
-var userAnswers = [];
 function userAnswer(qNo, answer) {
 	var newAnswer = {
 		qNo: qNo,
 		answer: answer
 	}
 	return newAnswer;
+}
+
+var userAnswers = [];
+
+function populateAnswer(qNumber, answer) {
+	var uAnswer = userAnswer(qNumber, answer);
+
+	var found = false;
+	for (var i = 0; i < userAnswers.length; i++) {
+		if(userAnswers[i].qNo == uAnswer.qNo) {
+			userAnswers[i].answer = uAnswer.answer;
+			found = true;
+			break;
+		}
+	};
+
+	if(!found) {
+		userAnswers.push(uAnswer);
+	}
+	console.log(JSON.stringify(userAnswers))
 }
 
 function passAnswer(qNumber) {
@@ -41,20 +59,8 @@ function passAnswer(qNumber) {
 	if(!aAnswered0Div.classList.contains("hidden")) aAnswered0Div.classList.add("hidden");
 
 	var answer = answerDiv.value;
-	var uAnswer = userAnswer(qNumber, answer);
 	
-	var found = false;
-	for (var i = 0; i < userAnswers.length; i++) {
-		if(userAnswers[i].qNo == uAnswer.qNo) {
-			userAnswers[i].answer = uAnswer.answer;
-			found = true;
-			break;
-		}
-	};
-
-	if(!found) {
-		userAnswers.push(uAnswer);
-	}
+	populateAnswer(qNumber, answer);
 
 	// Validation to ensure user can't advance with no value entered
 	// This will need moving out when handling for true/false answers is implemented
@@ -125,6 +131,8 @@ function yesOrNo(yesNo, qNumber) {
 
 	if(yesNo == "yes") {
 
+		populateAnswer(qNumber, "Yes");
+
 		switch (aAnswerDiv.id) {
 			case "a3AnswerDiv":
 			aAnswerDiv.innerHTML = "<h1>Turn it off!</h1><p class='lead'>If you brush your teeth twice a day for 2 minutes like a good person, you could be wasting around 24 litres of water every day.</p><p class='lead'>By turning the tap off you can save around 12-18 litres per time.</p>"
@@ -149,6 +157,8 @@ function yesOrNo(yesNo, qNumber) {
 
 	} else {
 
+		populateAnswer(qNumber, "No");
+
 		switch (aAnswerDiv.id) {
 			case "a3AnswerDiv":
 			aAnswerDiv.innerHTML = "<h1>Go you!</h1><p class='lead'>Well done by turning the tap off you are saving around 12-18 litres of water per time.</p>"
@@ -172,4 +182,16 @@ function yesOrNo(yesNo, qNumber) {
 		}
 
 	}
+}
+
+function finishQuiz() {
+	var scoreDiv = document.getElementById("finalScore");
+	var scoreList = document.getElementById("scoreList");
+
+	for (var i = 0; i < userAnswers.length; i++) {
+		var questionLi = document.createElement("li");
+		var questionText = document.createTextNode(userAnswers[i].qNo + " - " + userAnswers[i].answer);
+		questionLi.appendChild(questionText);
+		scoreList.appendChild(questionLi);
+	};
 }

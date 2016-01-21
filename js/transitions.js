@@ -21,6 +21,8 @@ $(".questionSelect > a, .btn").click(function(){
 
 		newDiv.getElementsByClassName('cover-container')[0].className='cover-container ' + rTIn;
 
+		sliderValue.html(0);
+
 		// If we are going to a question page, animate the image
 		var currentSVGs = [];
 		//custom handing for q9 because it has multiple paths

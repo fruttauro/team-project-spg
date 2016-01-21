@@ -2,7 +2,7 @@ var oldDiv = "";
 var newDiv = "";
 var oDiv = "";
 var nDiv = "";
-var tIn = ['zoomIn', 'zoomInUp', 'rollIn', 'lightSpeedIn', 'flipInX'];
+var tIn = ['zoomIn', 'zoomInUp', 'rollIn', 'lightSpeedIn', 'flipInX', 'slideExpandUp', 'swap', 'perspectiveDownRetourn'];
 var tOut = ['rotateOutDownRight', 'hinge', 'rollOut', 'lightSpeedOut', 'flipOutX'];
 
 $(".questionSelect > a, .btn").click(function(){

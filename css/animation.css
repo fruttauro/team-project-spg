@@ -131,6 +131,84 @@
     }
 }
 
+/**********************************  slideExpandUp  *******************************/
+
+.slideExpandUp{
+    -webkit-animation: slideExpandUp;   
+    -webkit-animation-duration: 1.6s;
+    -webkit-animation-timing-function: ease -out;
+}
+
+@-webkit-keyframes slideExpandUp{
+    0%{
+        -webkit-transform: translateY(100%) scaleX(0.5);
+    }
+    30%{
+        -webkit-transform: translateY(-8%) scaleX(0.5);
+    }   
+    40%{
+        -webkit-transform: translateY(2%) scaleX(0.5);
+    }
+    50%{
+        -webkit-transform: translateY(0%) scaleX(1.1);
+    }
+    60%{
+        -webkit-transform: translateY(0%) scaleX(0.9);      
+    }
+    70%{
+        -webkit-transform: translateY(0%) scaleX(1.05);
+    }           
+    80%{
+        -webkit-transform: translateY(0%) scaleX(0.95);     
+    }
+    90%{
+        -webkit-transform: translateY(0%) scaleX(1.02);
+    }   
+    100%{
+        -webkit-transform: translateY(0%) scaleX(1);        
+    }
+}
+
+/**************************************  swap  ***********************************/
+
+.swap{
+    -webkit-animation-name: swap;
+    -webkit-animation-duration: 1.6s;
+}
+
+@-webkit-keyframes swap{
+    0%{
+        opacity: 0;
+        -webkit-transform-origin: 0 100%;
+        -webkit-transform: scale(0, 0) translate(-700px, 0px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform-origin: 100% 100%;
+        -webkit-transform: scale(1, 1) translate(0px, 0px);;
+    }
+}
+
+/****************************  perspectiveDownRetourn  ***************************/
+
+.perspectiveDownRetourn{
+    -webkit-backface-visibility: visible !important;
+    -webkit-animation-name: perspectiveDownRetourn;
+    -webkit-animation-duration: 1.6s;
+}
+
+@-webkit-keyframes perspectiveDownRetourn{
+    0%{
+        -webkit-transform-origin: 0 100%;
+        -webkit-transform: perspective(800px) rotateX(-180deg);
+    }
+    
+    100%{
+        -webkit-transform-origin: 0 100%;
+        -webkit-transform: perspective(800px) rotateX(0deg);
+    }
+}
+
 /**********************************************************************************/
 /**********************************  Animate Out  *********************************/
 /**********************************************************************************/
